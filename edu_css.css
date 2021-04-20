@@ -1,3 +1,5 @@
+
+
 h1 {
 	text-align : center;
 	padding-left : 10vw;
@@ -5,71 +7,42 @@ h1 {
 }
 
 table {
-	width: 100%;
+	width : 100%;
 	border-collapse : separate;
 	text-align : center;
-	font-size : 5vw;
 	border-width : 20px;
-	overflow-x : auto;
 }
 
 th{
+	font-size :max(2vw,15px);
 	border-collapse : collapse;
 	border-bottom : 3px solid;
-	background-color : #f5f7ff;
-	font-size : 25px;
+	background-color : #b5f7bc;
 	font-weight: bold;
 	color: #007399;
-	
 }
-th,td{
-}
+
+
 td{
 	text-align: center;
-	vertical-align : center;
 	border-collapse : collapse;
-	border-right : 0px;
-	padding-top : 50px;
 	border-bottom: 2px solid black;
-	font-size : 20px;
+	font-size : max(12px,1.7vw);
 }
 .year{
-	height : 90px;
-	width : 100px;
-	border-top-width : 20px;
-	background-color : #026448;
-	text-align : top;
-	color : white;
+	clip-path: polygon(50% 0, 100% 25%, 100% 100%, 50% 75%, 0 100%, 0 25%);
+	background-color : #1b8c5d;
 }
 .year > p{
-	padding : 0px;
+	padding-bottom : 30px;
+	padding-top : 40px;
 	position : relative;
 	font-size : 30px;
-	top : -50px;
+	top : 0;
 }
-.year:after {
-  content : "";
-  position: relative;
-  right: 0px;
-  bottom: 78px;
-  width: 0;
-  height: 0;
-  border-bottom: 30px solid white;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-}
-.year:before {
-  content: "";
-  position : relative;
-  left: 0px;
-  bottom: 62px;
-  width: 0;
-  height: 0;
-  border-bottom: 40px solid #026448;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-}
+
+
 body{
 	align-items: center;
-	font-size: 2vw;
+	font-size: max(2vw,10px);
 }
