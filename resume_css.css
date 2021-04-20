@@ -1,0 +1,152 @@
+* {
+	box-sizing : border-box;
+}
+	
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+h1{
+	font-size : 4.5vw;
+	text-align : center;
+	padding-top : 3vw;
+	color : white;
+	line-height : 25vm;
+}
+
+	
+h1: hover {
+	color : darkcyan
+}
+
+.boundary {
+	width : 65vw;
+	height : 75vw;	
+	border-top-left-radius : 50px;
+	border-top-right-radius : 50px;
+	--background-image : url("bc.jpg");
+	background-color: white;
+	
+}
+.headshape {
+	position:relative;
+	background-color : lightpink;
+	background-image : url("bc3.jpg");
+	background-size : cover;
+	border-top-right-radius : 50px;
+	border-bottom-right-radius: 50px;
+	border-bottom: 5px solid #00264d;
+	height : 20vw;
+	width : 85vw;
+	opacity : 100%;
+	left : -17vw;
+	top : -3.5vw;
+}
+
+.headshape:hover {
+	background-color : pink;
+	border-bottom-width : 5px;
+	border-bottom-color : darkcyan;
+}
+.pic {
+	position : relative;
+	bottom : 0vw;
+	left :2vw;
+	height : 20vw;
+	width : 15vw;
+	border-radius : 200px;
+	background-image : url("sanj1.jpeg");
+	background-size : cover;
+	display : inline-block;
+}
+.dp {
+	object-fit : fill;
+	width : 100%;
+	height: 100%
+}
+body {
+	padding-top : 5vw;
+	display : flex;
+	align-items:center;
+	justify-content : center;
+	background-color : darkcyan;
+	background-image : url("bc4.webp");
+	background-repeat : repeat;
+}	
+
+
+.frame1 {
+	position: relative;
+	top: -3.5vw;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 65vw;
+	height: 55vw;
+	border : none;
+	
+}
+
+
+
+
+
+
+
+
+
+
+.menu1 {
+	position : absolute;
+	top: 375px;
+	left : 0px;
+	height : 40px;
+	border : 10px;
+}
+.menutd {
+	list-style-type : none;
+	background-color: #00264d;
+	font-size: 20px;
+	width : 200px;
+}
+.menutd > a {
+	color : white;
+	display: block;
+	padding-left : 30px;
+	padding-right : 30px;
+}
+.menutd > a:hover {
+	background-color : #283e3e;
+	cursor: pointer;
+}
+a {
+	text-decoration : none;
+}
+
+.menutd > a:focus {
+	background-color : #283e3e;
+}
+
+
