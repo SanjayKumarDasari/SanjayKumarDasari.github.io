@@ -8,7 +8,7 @@ h1 {
 
 table {
 	width : 100%;
-	border-collapse : separate;
+	border-collapse : collapse;
 	text-align : center;
 	border-width : 20px;
 }
@@ -27,7 +27,7 @@ td{
 	text-align: center;
 	border-collapse : collapse;
 	border-bottom: 2px solid black;
-	font-size : max(12px,1.7vw);
+	font-size : max(15px,1.7vw);
 }
 .year{
 	clip-path: polygon(50% 0, 100% 25%, 100% 100%, 50% 75%, 0 100%, 0 25%);
@@ -37,6 +37,7 @@ td{
 	padding-bottom : 30px;
 	padding-top : 40px;
 	position : relative;
+	color : white;
 	font-size : 30px;
 	top : 0;
 }
