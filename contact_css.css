@@ -1,0 +1,27 @@
+body{
+	font-size : 20px;
+	text-align : center;
+}
+
+.shape1{
+	width : 100%;
+	min-height : 20px;
+	background-color : #bbe8ed;
+	border-radius : 2vw;
+	
+}
+a {
+	text-decoration : none;
+	padding : 2vw;
+	color : black;
+}
+.shape1 a:hover {
+	background-color : #18ab7c;
+	border : 2px solid 
+}
+
+#insta,#mail,#wapp,#lin,#tele{
+  --background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  
+  font-size: 50px; /* change this to change the size*/
+}	

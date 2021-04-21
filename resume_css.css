@@ -1,14 +1,15 @@
 body{
-	background-color : #f0fff0;
+	background-color : #f2f0f2	;
 	padding-top : 5vh;
+	margin : 0;
 }
 
 
 .boundary{
 	width : 85vw;
 	min-height : 90vh;
-	border : 2px solid black;
-	background-color : #f2f0f2;
+	border : none;
+	background-color : #f0fff0;
 }
 
 * {
@@ -42,13 +43,15 @@ body{
 .headshape {
 	width : 85vw;
 	min-height : 10vh;
+	border-top-left-radius :30px;
+	border-bottom-left-radius : 30px;
 	background-color : #18ab7c;
 	border : none;
 }
 
 .pic {
 	width : 20vw;
-	height : 20vw;
+	min-height : max(20vh,20vw);
 	border-radius : 30px;
 	background-image : url("sanj1.jpeg");
 	background-size : cover;
@@ -66,7 +69,39 @@ h1{
 
 .frame1 {
 	width: 100%;
-	height: 700px;
+	height: 700px;	
 	overflow : hidden;
 	border : none;
+	border-bottom :2px solid;
+}
+
+
+
+.menu{
+	position : sticky;
+	position : -webkit-sticky;
+	top : 0;
+	background-color : #1d454a;
+}
+
+li{
+	font-size : 25px;
+	float : left;
+}
+.menu > ul {
+	list-style-type : none;
+
+}
+
+
+li a{
+	display : block;
+	padding-left : 2vw;
+	padding-right : 2vw;
+	text-decoration : none;
+	color : white;
+}
+
+li a:focus{
+	background-color : #f77474;
 }
