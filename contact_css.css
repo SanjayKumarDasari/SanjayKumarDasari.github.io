@@ -1,8 +1,11 @@
 body{
-	font-size : 20px;
+	font-size : 15px;
 	text-align : center;
 }
 
+p {
+	font-size : 20px;
+}
 .shape1{
 	width : 100%;
 	min-height : 20px;
@@ -23,5 +26,5 @@ a {
 #insta,#mail,#wapp,#lin,#tele{
   --background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   
-  font-size: 50px; /* change this to change the size*/
+  font-size: 30px; /* change this to change the size*/
 }	

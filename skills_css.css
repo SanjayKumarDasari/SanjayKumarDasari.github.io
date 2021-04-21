@@ -29,9 +29,9 @@ li{
 	background-color : #18ab7c;
 	padding-left : 10px;
 	padding-right : 10px;
-	margin : 30px;
+	margin : 2vw;
 	color :  black;
-	font-size : 20px;
+	font-size : min(2vw,15px);
 	font-weight : 900;
 }
 
