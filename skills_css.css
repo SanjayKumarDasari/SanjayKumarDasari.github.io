@@ -1,11 +1,9 @@
-body{
-}
 
-
-h1{
+h3{
 	border-radius : 2vw;
 	background-clip : text;
 	color : white;
+	font-size : 20px;
 	margin : 0;
 }
 .tile {
@@ -19,29 +17,30 @@ h1{
 	display : inline-block;
 }
 
-ul{
+.sul{
 	list-style-type : none;
 }
 
-li{
+.sli{
 	border-radius : 2vw;
 	float : left;
 	background-color : #18ab7c;
 	padding-left : 10px;
-	padding-right : 10px;
+	padding-right : 30px;
+	padding-top : 10px;
 	margin : 2vw;
 	color :  black;
-	font-size : min(2vw,15px);
+	font-size : min(2vw,20px);
 	font-weight : 900;
 }
 
-li{
+.sli{
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.5s;
 }
 
 /* On mouse-over, add a deeper shadow */
-li:hover {
+.sli:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }

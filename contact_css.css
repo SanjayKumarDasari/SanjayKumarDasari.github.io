@@ -1,24 +1,27 @@
-body{
-	font-size : 15px;
+.ctbody{
+	font-size : 25px;
 	text-align : center;
+}
+.ch3 {
+	color : black;
 }
 
 p {
 	font-size : 20px;
 }
-.shape1{
+.ctshape1{
 	width : 100%;
 	min-height : 20px;
 	background-color : #bbe8ed;
 	border-radius : 2vw;
 	
 }
-a {
+.cta {
 	text-decoration : none;
 	padding : 2vw;
 	color : black;
 }
-.shape1 a:hover {
+.ctshape1 a:hover {
 	background-color : #18ab7c;
 	border : 2px solid 
 }

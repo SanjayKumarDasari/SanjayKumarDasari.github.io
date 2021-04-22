@@ -4,32 +4,158 @@
 		<title>RESUME</title>
 		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0" >
 		<link rel = "stylesheet" href = "resume_css.css">
-		
-		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src = "resume_js.js"></script>
+		<link rel  = "stylesheet" href = "contact_css.css">
+		<link rel  = "stylesheet" href = "edu_css.css">
+		<link rel = "stylesheet" href = "skills_css.css">
+		<link rel = "stylesheet" href = "home_css.css">
+	
+	
 	</head>
-	<body>
+	
+	
+	
+	<body >
 		<div align = "center">
-			<div class = "row menu" id = "menu">
-				<ul>
-					<li><a href = "home.html" target = "frame1">ABOUT</a></li>
-					<li><a href = "edu.html" target = "frame1">EDUCATION</a></li>
-					<li><a href = "skills.html" target = "frame1">SKILLS</a></li>
-					<li><a>PROJECTS</a></li>
-					<li><a a href = "contact.html" target = "frame1">CONTACT</a></li>
-				</ul>
+			<div class = "row menu">
+				<div id = "open" class = "classMenu" onclick = "changeMenu(this)">
+					<div class = "bar1"></div>
+					<div class = "bar2"></div>
+					<div class = "bar3"></div>
+				</div>
+				<div class = "menux" id = "menux">
+					<ul class = "navbar">
+						<li><a href = "#"
+							onclick = "menuClicked(getElementById('open'),getElementById('home'))">ABOUT</a>
+						</li>
+						<li><a href = "#tab"
+							onclick = "menuClicked(getElementById('open'), getElementById('edu'))">EDUCATION</a></li>
+						<li><a href = "#tab"
+							onclick = "menuClicked(getElementById('open'),getElementById('skills'))">SKILLS</a>
+						</li>
+						<li><a>PROJECTS</a></li>
+						<li><a href = "#tab"  
+							onclick = "menuClicked(getElementById('open'), getElementById('contact'))">CONTACT
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		
 		
 			<div class  = "boundary">					
 				<div class = "row headshape">
-					<div class = "col-3 pic"></div>
+					<div class = "col-3"><img src = "sanj1.jpeg" class = "pic"></img></div>
 					<div class = "col-9"><h1>SANJAY KUMAR DASARI</h1></div>
 				</div>
-
+				<div section = "tab">
+				
+				<!-------------------homepage--------------------->
+				<div class = "tab homebody" id = "home">
+					<h2>Hi, This is Sanjay.</h2>	
+					<p class = "hp">As of <time>21-04-2021</time> I'm a Computer Science final year student</p>
+					<p class = "hp">Explore the sections to find more of my works and details.</p>
+							
+							
+				</div>			
+				<!-----------------contactpage--------------------------------->
+				<div class = "tab ctbody" id = "contact">
+					<h2>CONTACT</h2>
+					<p>Hi, I'm thrilled your here. <br>Let's get connected.</p>
+					<div class = "ctshape1">
+						<a class = "fa fa-instagram cta"  id = "insta"
+						href  = "https://www.instagram.com/sanjaykumardasari/" target = "_blank"></a>
+						
+						<a class = "fa fa-envelope cta" id = "mail" href = "mailto:dsanjaykumar121@gmail.com" 
+						target = "_blank"></a>
+						
+						<a class = "fa fa-whatsapp cta" id = "wapp"
+						href="https://api.whatsapp.com/send?phone=918500434390&text=Hi%20There!" 
+						target = "_blank"></a>
+						
+						<a class = "fa fa-linkedin cta" id = "lin"
+						href = "https://www.linkedin.com/in/sanjay-kumar-dasari-b920b7193/" target = "_blank"></a>
+						
+						<a class = "fa fa-telegram cta" id  = "tele"
+						 href = "https://t.me/sanjay2110" target = "_blank"></a>
+						
+					</div>
+					<h3 class = "ch3">phone : 9182711939</h3>
+					<h3 class = "ch3">Gmail : dsanjaykumar121@gmail.com</h3>
+		
+				</div>
+				
+				<!-------------------edupage---------------------------------->
+				<div class = "tab edubody" id = "edu">
+					<h23class = "eduh2">EDUCATION DETAILS</h2>
+					<div style="overflow-x:auto; overflow-y : hidden;">
+						<table class = "edutable">
+							<tr>
+								<td style = "border-bottom: 0px;"></td>
+								<th class = "eduth">COURSE</th>
+								<th class = "eduth">INSTITUTE</th>
+								<th class = "eduth">PERCENTAGE/CGPA</th>
+							</tr>
+							<tr>
+								<td style = "border-bottom: 0px;" class = "edutd"><div class = "eduyear"><p><b>2021</b></p></div></td>
+								<td class = "edutd">B.Tech (CSE)</td>
+								<td class = "edutd">Gayatri Vidya Parishad College of Engineering(A), A.P.</td>
+								<td class = "edutd">8.28</td>
+							</tr>
+							<tr>
+								<td class = "edutd" style = "border-bottom: 0px;"><div class = "eduyear"><p><b>2017</b></p></div></td>
+								<td class = "edutd">12<sup>th</sup> (MPC)</td>
+								<td class = "edutd">Sri Chaitanya Boys Junior College, Vijayawada, A.P.</td>
+								<td class = "edutd">97.3</td>
+							</tr>
+							<tr>
+								<td class = "edutd" style = "border-bottom: 0px;"><div class = "eduyear"><p><b>2015</b></p></div></td>
+								<td class = "edutd">10<sup>th</sup> </td>
+								<td class = "edutd">Viswakavi public School, Bhimavaram, A.P.</td>
+								<td class = "edutd">9.7</td>
+							</tr>
+						</table>
+					</div>
+				
+				</div>
+				<!-------------------------skills------------------>
+				<div class = "tab outer sul" id = "skills">
+					<div class = "sli tile">
+					<h3>Programming Languages</h3>
+					<ul class = "sul">
+						<li class = "sli">C</li>
+						<li class = "sli">PYTHON</li>
+						<li class = "sli">JAVA</li>
+					</ul>
+					</div>
+					<div  class = "sli tile">
+					<h3>Web Technologies</h3>
+					<ul class = "sul">
+						<li class = "sli">HTML</li>
+						<li class = "sli">CSS</li>
+						<li class = "sli">JAVASCRIPT</li>
+					</ul>
+					</div>
+					<div  class = "sli tile">
+					<h3>DBMS</h3>
+					<ul class = "sul">
+						<li class = "sli">SQL</li>
+					</ul>
+					</div>
+					<div  class = "sli tile">
+					<h3>RPA</h3>
+						<ul class = "sul">
+							<li class = "sli">UIPATH</li>
+							<li class = "sli">BLUEPRISM</li>
+						</ul>
+					</div>
+				</div>
 				
 				<!-------------frame------------->
-				<div class = "row frame1">
+				<!--div class = "row frame1">
 					<iframe src="home.html"  name="frame1" class = "frame1"></iframe>
+				</div-->
 				</div>
 			</div>
 		</div>

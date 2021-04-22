@@ -42,27 +42,29 @@ body{
 
 .headshape {
 	width : 90vw;
-	min-height : 10vh;
-	border-top-left-radius :30px;
-	border-bottom-left-radius : 30px;
+	min-height : 20vh;
+	-border-top-left-radius :30px;
+	-border-bottom-left-radius : 30px;
 	background-color : #18ab7c;
 	border : none;
-	
+	margin : 0;
+	float : left;
 }
 
 .pic {
-	width : 20vw;
-	min-height : max(20vh,20vw);
+	width : max(11vw,100px);
+	min-height : max(25vh,25vw);
 	border-radius : 30px;
 	background-image : url("sanj1.jpeg");
 	background-size : cover;
 	display : inline-block;
+	padding : 0;
 }
 
 h1{
 	font-size : max(4.5vw,20px);
 	text-align : center;
-	padding-top : 5vh;
+	padding-top : 10vh;
 	padding-bottom : 0px;
 	color : white;
 	line-height : 25vm;
@@ -70,7 +72,7 @@ h1{
 
 .frame1 {
 	width: 100%;
-	height: 700px;	
+	min-height : 50vh;
 	overflow : hidden;
 	border : none;
 	border-bottom :2px solid;
@@ -85,15 +87,16 @@ h1{
 	background-color : #1d454a;
 }
 
-li{
+.menux ul li{
 	font-size : 25px;
 	float : left;
 }
-.menu > ul {
+.menux > ul {
 	list-style-type : none;
-
 }
-
+.menux {
+	display : block;
+}
 
 li a{
 	display : block;
@@ -105,4 +108,76 @@ li a{
 
 li a:focus{
 	background-color : #f77474;
+}
+
+
+@media screen and (max-width : 470px) {
+	
+	[class*="col-"] {
+		width : 100%;
+	}
+	
+	h1{
+		padding : 0px;
+	}
+	
+}
+
+
+
+#open {
+		display : none;
+	}
+
+@media screen and (max-width : 740px) {
+	
+	.menux {
+		display : none;
+	}
+	.menux ul li {
+		float : none;
+	}
+	#open {
+		display : inline-block;
+		font-size : 3vw;
+		float : left;
+		font-weight :  900;
+		cursor : pointer;
+	}
+	.bar1, .bar2, .bar3 {
+		width: 35px;
+		height: 5px;
+		background-color: white;
+		margin: 6px 0;
+		transition: 0.4s;
+	}
+	
+	
+	
+	.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+		transform: rotate(-45deg) translate(-9px, 6px);
+	}
+
+	.change .bar2 {opacity: 0;}
+
+	.change .bar3 {
+		-webkit-transform: rotate(45deg) translate(-8px, -8px);
+		transform: rotate(45deg) translate(-8px, -8px);
+	}
+}
+
+
+
+#contact {
+	display : none;
+}
+
+
+#skills {
+	display : none;
+}
+
+#edu {
+	display : none;
 }

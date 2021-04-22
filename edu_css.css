@@ -1,19 +1,19 @@
 
 
-h1 {
+.eduh2 {
 	text-align : center;
 	padding-left : 10vw;
 	padding-right : 10vw;
 }
 
-table {
-	width : 100%;
+.edutable {
+	width : 80%;
 	border-collapse : collapse;
 	text-align : center;
 	border-width : 20px;
 }
 
-th{
+.eduth{
 	font-size :max(2vw,15px);
 	border-collapse : collapse;
 	border-bottom : 3px solid;
@@ -23,18 +23,20 @@ th{
 }
 
 
-td{
+.edutd{
 	text-align: center;
+	padding-top : 30px;
+	padding-left : 5px;
 	border-collapse : collapse;
 	border-bottom: 2px solid black;
 	font-size : max(15px,1.7vw);
 }
-.year{
+.eduyear{
 	clip-path: polygon(50% 0, 100% 25%, 100% 100%, 50% 75%, 0 100%, 0 25%);
 	background-color : #1b8c5d;
 }
-.year > p{
-	padding-bottom : 30px;
+.eduyear > p{
+	padding-bottom : 40px;
 	padding-top : 40px;
 	position : relative;
 	color : white;
@@ -43,7 +45,7 @@ td{
 }
 
 
-body{
+.edubody{
 	align-items: center;
 	font-size: max(2vw,10px);
 }
