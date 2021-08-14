@@ -1,8 +1,32 @@
 .homebody{
+	display : inline-block;
 	text-align : center;
-	font-size : 15px;
+	color : black;
 }
 
 .hp {
-	font-size : 20px;
+	font-family : 'Smokum';
+	letter-spacing: 2px;
+	font-size : 20px;;
+}
+
+.hcont {
+	--background-color : rgba(192,219,189,1);
+
+	margin : 30px auto;
+}
+
+.ahr {
+	margin: 0 auto;
+    margin-top: 40px;
+    width: 200px;
+    border: 0;
+	height : 2px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.intro {
+	font-family : 'Margarine';
+	padding-top : 50px;
+	font-size : 25px;
 }

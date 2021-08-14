@@ -2,32 +2,52 @@
 	font-size : 25px;
 	text-align : center;
 }
+.ch2 {
+	display : table;
+	margin : 0 auto;
+	text-align : center;
+	font-size : max(5vw,30px);
+	color : #2C2828;
+	background-image : linear-gradient(rgba(1,82,60,0.5), 5%, rgba(1,82,60,0),10%,rgba(1,82,60,0),95%, rgba(1,82,60,0.5));
+	font-family : 'Big Shoulders Stencil Text';
+}
 .ch3 {
 	color : black;
 }
 
-p {
+.ctbody p {
 	font-size : 20px;
+	font-family : 'Kirang Haerang';
+	letter-spacing : 2px;
+	font-weight : 10;
 }
-.ctshape1{
-	width : 100%;
+.ctshape1 {
 	min-height : 20px;
-	background-color : #bbe8ed;
+	width : min-content;
+	margin : auto;
+	display : flex;
 	border-radius : 2vw;
-	
 }
 .cta {
 	text-decoration : none;
-	padding : 2vw;
+	padding : 3vw;
+	color : black;
+	font-size : 30px;
+}
+.cta:hover {
+	text-decoration : none;
+	font-size : 35px;
 	color : black;
 }
-.ctshape1 a:hover {
-	background-color : #18ab7c;
-	border : 2px solid 
+
+.cta:focus {
+	color : black;
+	text-decoration : none;
 }
 
-#insta,#mail,#wapp,#lin,#tele{
-  --background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  
-  font-size: 30px; /* change this to change the size*/
-}	
+.ccont {
+	background-color : #F4F4F2;
+	margin : 20px auto;
+---	border-bottom-left-radius : 50%;
+	---border-bottom-right-radius : 50%;
+}

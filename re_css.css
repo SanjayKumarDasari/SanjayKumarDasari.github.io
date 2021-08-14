@@ -1,0 +1,41 @@
+.rpdf {
+	height : 250px;
+	min-width : 200px;
+	background-image : url('res.jpg');
+	background-size : contain;
+}
+.rcont {
+	padding-bottom : 100px;
+	margin : 20px auto;
+	width : 90%;
+	background-image : Linear-gradient(rgba(192,219,189,1),60%,rgba(192,219,189,0));
+}
+
+.rh2 {
+	display : table;
+	margin : 0 auto;
+	text-align : center;
+	font-size : max(5vw,30px);
+	color : #2C2828;
+	background-image : linear-gradient(rgba(1,82,60,0.5), 5%, rgba(1,82,60,0),10%,rgba(1,82,60,0),95%, rgba(1,82,60,0.5));
+	font-family : 'Big Shoulders Stencil Text';
+}
+
+#resume a {
+	display : block;
+	margin : 0 auto;
+	text-decoration : none;
+	color : black;
+	font-size : 20px; 
+	width : min-content;
+}
+
+#resume {
+	align : center;
+	text-align : center;
+}
+
+#resume p{
+	font-family : "times new roman";
+	font-size : 20px;
+}

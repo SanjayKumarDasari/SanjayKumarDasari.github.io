@@ -1,46 +1,105 @@
-
-h3{
-	border-radius : 2vw;
-	background-clip : text;
-	color : white;
-	font-size : 20px;
-	margin : 0;
-}
-.tile {
-	text-align : center;
-}	
-
-
-.outer{
+.ele{
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position : center;
+	height: 100px;
+	width : 150px;
 	padding : 0px;
-	list-style-type : none;	
-	display : inline-block;
+	margin : 15px auto;
+}
+.sh2 {
+	display : table;
+	margin : 0 auto;
+	text-align : center;
+	font-size : max(5vw,30px);
+	color : #2C2828;
+	background-image : linear-gradient(rgba(1,82,60,0.5), 5%, rgba(1,82,60,0),10%,rgba(1,82,60,0),95%, rgba(1,82,60,0.5));
+	font-family : 'Big Shoulders Stencil Text';
 }
 
-.sul{
+.clan {
+	background-image: url('clan.png');
+}
+
+.plan {
+	background-image: url('plan.png');
+} 
+.jlan{
+	background-image: url('jlan.png');
+} 
+
+.htm{
+	
+	background-image: url('html.png');
+}
+
+.cs{
+	background-image: url('css.png');
+}
+
+.js{
+	background-image: url('js.png');
+}
+
+.sql {
+	background-image: url('sql.png');
+}
+.ps {
+	background-image: url('ps.jpg');
+}
+.off {
+	background-image: url('off.png');
+}
+
+.scont {
+	margin : 0 auto;
+	width : 70%;
+}
+
+.slist {
 	list-style-type : none;
+	padding : 0;
+}
+.stext{
+	padding-top : 20px;
+	padding-bottom : 20px;
+	text-align : center;
 }
 
-.sli{
-	border-radius : 2vw;
+.slist > li {
 	float : left;
-	background-color : #18ab7c;
-	padding-left : 10px;
-	padding-right : 30px;
-	padding-top : 10px;
-	margin : 2vw;
-	color :  black;
-	font-size : min(2vw,20px);
-	font-weight : 900;
+	display : block;
+	padding : 20px;
+	font-size : 15px;
 }
 
-.sli{
+
+.elec {
   /* Add shadows to create the "card" effect */
+  width : 100%;
+  border-radius : 10%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.5s;
+  background-color : #F7F4E3;
 }
 
 /* On mouse-over, add a deeper shadow */
-.sli:hover {
+.elec:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width : 780px) {
+	.scont {
+		width : 100%;
+	}
+	.ele {
+		width : 100px;
+		height : 75px;
+	}
+}
+@media screen and (max-width : 420px){
+	.ele {
+		width : 100px;
+		height : 75px;
+	}
 }

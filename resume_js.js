@@ -1,23 +1,35 @@
 
-function changeMenu(x) {
-	x.classList.toggle("change");
-	var v = document.getElementById("menux");
-	if (v.style.display === "none" || v.style.display === "") {
-		v.style.display = "block";
-  } else {
-    v.style.display = "none";
-  }
+function openToggle(op){
+	op.classList.toggle("change");
+	var navbar = document.getElementById("menubar");
+	var nav = document.getElementById("myNavbar");
+	var p = window.getComputedStyle(op);
+	var b = document.getElementById("main");
+	b.style.transition = "0.5s";
+	if(p.getPropertyValue("right") === "30px")
+	{
+		navbar.style.width = "250px";
+		op.style.right =  "200px";
+		nav.style.display = "block";
+		b.style.marginRight = "250px";
+	}
+	else {
+		navbar.style.width = "0px";
+		nav.style.display = "none";
+		op.style.right = "30px";
+		b.style.marginRight = "0px";
+	}
 }
 
-function menuClicked(x , y)
+function menuClicked(op , y)
 {
-	var s = window.getComputedStyle(x);
+	var s = window.getComputedStyle(op);
 	var i;
 	
 	dis = s.getPropertyValue("display");
 	if(dis === "block")
 	{
-		changeMenu(x);
+		openToggle(op);
 	}
 	tabs = document.getElementsByClassName("tab");
 	for(i = 0; i < tabs.length; i++)
@@ -26,5 +38,3 @@ function menuClicked(x , y)
 	}
 	y.style.display = "block";
 }
-menuClicked(getElementById('open'), getElementById('edu'))
-
