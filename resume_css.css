@@ -196,11 +196,11 @@ h1{
 }
 
 #edu {
-	display : block;
+	display : none;
 }
 
 #home {
-	display : none;
+	display : block;
 }
 
 #projects {

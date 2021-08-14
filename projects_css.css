@@ -87,8 +87,9 @@
 
 
 .p1 {
-	background-image : url('p1.jpg');
+	background-image : url('p1.png');
 	background-size : cover;
+	background-color : #525050;
 } 
 
 .p2 {
