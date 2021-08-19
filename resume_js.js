@@ -31,10 +31,11 @@ function menuClicked(op , y)
 	{
 		openToggle(op);
 	}
+	/*
 	tabs = document.getElementsByClassName("tab");
 	for(i = 0; i < tabs.length; i++)
 	{
 		tabs[i].style.display = "none";
 	}
-	y.style.display = "block";
+	y.style.display = "block"; */
 }
