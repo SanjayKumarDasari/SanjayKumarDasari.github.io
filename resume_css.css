@@ -32,11 +32,7 @@ h1{
 
 .content, .boundary {
 	padding : 0;
-	height : 100%;
-	margin : 0;
-	#border : 10px solid green;
 } 
-
 
 .dpcont {
 	width : min-content;
@@ -124,7 +120,7 @@ h1{
 	
 	h1{
 		padding : 0px;
-		bottom  : 20px;
+		bottom : 20px;
 	}
 	
 }
@@ -166,32 +162,24 @@ h1{
 	}
 	
 	.navbar{
-		position : sticky;
-		float : right;
-		top : 0px;
 		background-color : black;
-		height : 100vh;
+		height : 100%;
 		width : 0px;
 	}
-	.menu {
-		#border: 2px solid red;
-		position : absolute;
-		right : 0;
-	}
+	
 	#open {
-		background-color : black;
 		display : block;
-		width : min-content;
-		top : 0;
-		right : 0px;
-		position: sticky;
-		padding : 10px;
-		border-bottom-left-radius : 50%;
+		position : absolute;
+		right : 30px;
+		top : 10	px;
 		font-size : 3vw;
+		float : left;
 		font-weight :  900;
 		cursor : pointer;
+		z-index : 1;
 		transition : 0.5s;
 	}
+	
 	.nav{
 		display : none;
 	}
@@ -216,27 +204,25 @@ h1{
 	display : block;
 }
 
-
 #projects {
 	display : block;
-	background-color : red;
 }
 #resume {
 	display : block;
 }
 
+.row::after {
+  content: "";
+  clear: both;
+}
+
+
 .tabs {
+	display : inline-block;
 	width : 100%;
-	background-color : #F9FBFC;
+	background-color : #EEEEEE;
 }
 
-.tab {
-	
-}
-
-html {
-  #scroll-behavior: smooth;
-}
 
 .space {
 	padding: 0;

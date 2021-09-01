@@ -1,28 +1,25 @@
 .ctbody{
 	font-size : 25px;
 	text-align : center;
-	background-color : #161616;
 }
 .ch2 {
 	display : table;
 	margin : 0 auto;
 	text-align : center;
 	font-size : max(5vw,30px);
-	color : #EAE7AF;
-	#background-image : linear-gradient(rgba(1,82,60,0.5), 5%, rgba(1,82,60,0),10%,rgba(1,82,60,0),95%, rgba(1,82,60,0.5));
+	color : #2C2828;
+	background-image : linear-gradient(rgba(1,82,60,0.5), 5%, rgba(1,82,60,0),10%,rgba(1,82,60,0),95%, rgba(1,82,60,0.5));
 	font-family : 'Big Shoulders Stencil Text';
 }
 .ch3 {
-	color : #00ff60;
+	color : black;
 }
 
 .ctbody p {
 	font-size : 20px;
-	color : #DBE9B7;
 	font-family : 'Kirang Haerang';
 	letter-spacing : 2px;
 	font-weight : 10;
-	
 }
 .ctshape1 {
 	min-height : 20px;
@@ -34,13 +31,13 @@
 .cta {
 	text-decoration : none;
 	padding : 3vw;
-	color : #ffffff;
+	color : black;
 	font-size : 30px;
 }
 .cta:hover {
 	text-decoration : none;
 	font-size : 35px;
-	color : #00ddd0;
+	color : black;
 }
 
 .cta:focus {
@@ -49,7 +46,7 @@
 }
 
 .ccont {
-	#background-color : #F4F4F2;
+	background-color : #F4F4F2;
 	margin : 20px auto;
 ---	border-bottom-left-radius : 50%;
 	---border-bottom-right-radius : 50%;
