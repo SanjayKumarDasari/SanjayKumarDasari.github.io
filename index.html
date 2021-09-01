@@ -21,43 +21,43 @@
 		<link href='https://fonts.googleapis.com/css?family=Ruslan Display' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=Kirang Haerang' rel='stylesheet'>
 	</head>
-	<body id = "main" >
-	
-<!-- Quantity should be the same in Sass-->
-		<div class = "content container-fluid" >
-			<div class  = "boundary container-fluid">					
-				<div class = "headshape container-fluid">
-					<div class = "menu">
-						<div id = "open"  type="button"  onclick = "openToggle(this)">
-							<div class = "bar1"></div>
-							<div class = "bar2"></div>
-							<div class = "bar3"></div>
-						</div>
-						<nav  id = "menubar" class = "navbar">
+	<body onload = "setH()">
+		
+		<div class = "content" id = "content">
+			<div class = "menu" id = "menu">
+			<nav  id = "menubar" class = "navbar">
 							<div class = "container-fluid">
 								<ul class = "nav navbar-nav navbar-right" id = "myNavbar" >
-									<li><a href = "#home"
-										onclick = "menuClicked(getElementById('open'),getElementById('home'))" >ABOUT</a>
+									<li><a href = "#about"
+										onclick = "menuClicked(getElementById('open'))" >ABOUT</a>
 									</li>
+									
 									<li><a href = "#edu"
-										onclick = "menuClicked(getElementById('open'), getElementById('edu'))" >EDUCATION</a></li>
+										onclick = "menuClicked(getElementById('open'))" >EDUCATION</a></li>
 									<li><a href = "#skills"
-										onclick = "menuClicked(getElementById('open'),getElementById('skills'))" >SKILLS</a>
+										onclick = "menuClicked(getElementById('open'))" >SKILLS</a>
 									</li>
 									<li><a href = "#projects" 
-										onclick = "menuClicked(getElementById('open'), getElementById('projects'))" >PROJECTS</a>
+										onclick = "menuClicked(getElementById('open'))" >PROJECTS</a>
 									</li>
 									<li><a href = "#contact"  
-										onclick = "menuClicked(getElementById('open'), getElementById('contact'))" >CONTACT</a>
+										onclick = "menuClicked(getElementById('open'))" >CONTACT</a>
 									</li>
 									<li><a href = "#resume"  
-										onclick = "menuClicked(getElementById('open'), getElementById('resume'))" >RESUME</a>
+										onclick = "menuClicked(getElementById('open'))" >RESUME</a>
 									</li>	
 								</ul>
 							</div>
 						</nav>
+			<div id = "open"  type="button"  onclick = "openToggle(this)">
+					<div class = "bar1"></div>
+					<div class = "bar2"></div>
+					<div class = "bar3"></div>
+			</div>
+			</div>
+			<div class  = "boundary container-fluid" id = "main">
+				<div class = "headshape container-fluid">
 						<div class = "flies container-fluid">
-						<div class="firefly"></div>
 							<div class="firefly"></div>
 							<div class="firefly"></div>
 							<div class="firefly"></div>
@@ -72,38 +72,98 @@
 							<div class="firefly"></div>
 							<div class="firefly"></div>
 							<div class="firefly"></div>
-					
-					</div>
-					<div class = "media container-fluid dp">
-						<div class = "row">
-						<div class = "container dpcont col">
-						<div class = "image-fluid pic"></div>	
+							<div class="firefly"></div>
+						</div>
+						<div class = "media container-fluid dp">
+							<div class = "row">
+							<div class = "container dpcont col">
+							<div class = "image-fluid pic"></div>	
 						</div>	
 						<div class = "col"><h1 ><span class = "hh1">SANJAY</span> <span class = "hh1">KUMAR</span> <span class = 'hh1'>DASARI</span></h1></div>
 						</div>
-					</div>
-					</div>
-				</div>
-					<div class = "tabs" id = "tabs">
-<!-------------------homepage------------------------------------------------------>
-						<div class = "container-fluid space">
-						<div class = "tab homebody" id = "home">
-							<div class = "container hcont">
-								<h3 class = "intro">Hi, I'm Sanjay.</h3>
-								<hr class = "ahr">
-								<br>
-								<br>
-								<br>
-								<p class = "hp">As of <time>21-04-2021</time>, I'm pursuing final year of Computer Science and Engineering</p>
-								<p class = "hp">Explore the sections to find more of my works and details.</p>
-							
-							</div>		
-						</div>	
 						</div>
+				</div>
+<!---------------------head end ----------------------------------------------->
 
+				<div class = "tabs">
+				
+<!-------------------homepage------------------------------------------------------>
+					<div class = "homebody container-fluid tab space" id = "about">
+						<div class = "container hcont">
+							<h3 class = "intro">Hi, I'm Sanjay.</h3>
+							<hr class = "ahr">
+							<br>
+							<br>
+							<br>
+							<p class = "hp" >As of <time>21-04-2021</time>, I'm pursuing final year of Computer Science and Engineering</p>
+							<p class = "hp">Explore the sections to find more of my works and details.</p>
+							
+						</div>		
+					</div>
+				
+<!-----------------------------------about-end------------------------>				
+				
+
+				
+<!-------------------------skills------------------------------------------------->
+					<div class = "tab container-fluid" id = "skills">
+							<br>
+							<br>
+							<h2 class = "sh2" >SKILLS</h2>
+							<div class = "scont container">
+								<ul class = 'slist'>
+									<li><div class = "elec container"><div class = "ele clan"></div><div class = "stext">C</div></div></li>
+									<li><div class = "elec container"><div class = "ele plan"></div><div class = "stext">PYTHON</div></div></li>
+									<li><div class = "elec container"><div class = "ele jlan"></div><div class = "stext">JAVA</div></div></li>
+									<li><div class = "elec container"><div class = "ele htm"></div><div class = "stext">HTML</div></div></li>
+									<li><div class = "elec container"><div class = "ele cs"></div><div class = "stext">CSS</div></div></li>
+									<li><div class = "elec container"><div class = "ele sql"></div><div class = "stext">MYSQL</div></div></li>
+									<li><div class = "elec container"><div class = "ele off"></div><div class = "stext">OFFICE 360</div></div></li>
+									<li><div class = "elec container"><div class = "ele ps"></div><div class = "stext">ADOBE PS7.0</div></div></li>
+									<li><div class = "elec container"><div class = "ele js"></div><div class = "stext">JAVA SCRIPT</div></div></li>
+								</ul>
+							</div>
+						</div>
+<!---------------------------------skills end------------------------------->
+<!-------------------------projects-------------------------------------------------->
+						<div class = "tab container-fluid projbody"  id = "projects">
+							<br>
+							<br>
+							<h2 class = "pjh2">PROJECTS</h2>
+							<div class = "pcont container">
+							<ul>
+								<li><div class = "ptile">
+										<div class  = "ppiccl"><div class = "ppicl p1"></div></div>
+										<div class = "ptextr">
+											<h3 class = "pjh3">PORTFOLIO WEBPAGE</h3><p>Designed, Developed and Deployed a portfolio website using HTML, CSS, JS, and BootStrap.</p>
+										</div>
+									</div>
+								</li>
+								<li><div class = "ptile">
+										
+										<div class = "ptextl">
+											<h3 class = "pjh3">CALCULATION OF ROI</h3><p>In this project, we integrate the customer data of an organisation 
+																		and create a customer 360 which is then used to calculate the Return on Investment 
+																		on Campaigns using Markov chain analysis. </p>
+										</div>
+										<div class  = "ppiccr"><div class = "ppicr p2"></div></div>
+									</div>
+								</li>
+								<li><div class = "ptile">
+										<div class  = "ppiccl"><div class = "ppicl p3"></div></div>
+										<div class = "ptextr">
+											<h3 class = "pjh3">AUTOMATED VISUAL MEDIA CAPTION GENERATOR</h3><p>In this project, we have built an application putting-together the capabilities of 
+													Computer Vision, Deep Learning, and NLP to intercept, understand and describe real world visual content.</p>
+										</div>
+										
+									</div>
+								</li>
+							</ul>
+							</div>
+						</div>							
+<!-------------------pro end-------------------------------------->
 <!-----------------edupage--------------------------------------------------------------------------->
-						<div class = "container-fluid space">
-						<div class = "tab edubody container-fluid" id = "edu">
+						<div class = "tab edubody container-fluid space" id = "edu">
 							<br>
 							<br>
 							<h2 class = "row eduh2">EDUCATION DETAILS</h2>
@@ -143,138 +203,12 @@
 									<div class = "eyear">2021</div>
 								</div>
 								</li>
-								<ul>
-								
-								
-								
-								
-								
-								
-								
-								<!--------table class = "edutable table">
-								style="overflow-x:auto; overflow-y : hidden;" 
-									<tr>
-										<td style = "border-bottom: 0;"></td>
-										<th class = "eduth a">COURSE</th>
-										<th class = "eduth b">INSTITUTE</th>
-										<th class = "eduth c">EXCELLENCE</th>
-									</tr>
-									<tr>
-										<td style = "border-bottom: 0px;" class = "edutd"><div class = "eduyear"><p><b>2021</b></p></div></td>
-										<td class = "edutd">B.Tech (CSE)</td>
-										<td class = "edutd">Gayatri Vidya Parishad College of Engineering(A), A.P.</td>
-										<td class = "edutd">8.28</td>
-									</tr>
-									<tr>
-										<td class = "edutd" style = "border-bottom: 0px;"><div class = "eduyear"><p><b>2017</b></p></div></td>
-										<td class = "edutd">12<sup>th</sup> (MPC)</td>
-										<td class = "edutd">Sri Chaitanya Boys Junior College, Vijayawada, A.P.</td>
-										<td class = "edutd">97.3</td>
-									</tr>
-									<tr>
-										<td class = "edutd" style = "border-bottom: 0px;"><div class = "eduyear"><p><b>2015</b></p></div></td>
-										<td class = "edutd">10<sup>th</sup> </td>
-										<td class = "edutd">Viswakavi P	ublic School, Bhimavaram, A.P.</td>
-										<td class = "edutd">9.7</td>
-									</tr>
-								</table--->
-							
-							</div>
-						</div>
-						</div>
-<!-------------------------skills------------------------------------------------->
-						<div class = "container-fluid space">
-						<div class = "tab container-fluid"  id = "skills">
-							<br>
-							<br>
-							<h2 class = "sh2">SKILLS</h2>
-							<div class = "scont container">
-								<ul class = 'slist'>
-									<li><div class = "elec container"><div class = "ele clan"></div><div class = "stext">C</div></div></li>
-									<li><div class = "elec container"><div class = "ele plan"></div><div class = "stext">PYTHON</div></div></li>
-									<li><div class = "elec container"><div class = "ele jlan"></div><div class = "stext">JAVA</div></div></li>
-									<li><div class = "elec container"><div class = "ele htm"></div><div class = "stext">HTML</div></div></li>
-									<li><div class = "elec container"><div class = "ele cs"></div><div class = "stext">CSS</div></div></li>
-									<li><div class = "elec container"><div class = "ele sql"></div><div class = "stext">MYSQL</div></div></li>
-									<li><div class = "elec container"><div class = "ele off"></div><div class = "stext">OFFICE 360</div></div></li>
-									<li><div class = "elec container"><div class = "ele ps"></div><div class = "stext">ADOBE PS7.0</div></div></li>
-									<li><div class = "elec container"><div class = "ele js"></div><div class = "stext">JAVA SCRIPT</div></div></li>
 								</ul>
 							</div>
-						</div>
-						</div>
-<!-------------------------projects-------------------------------------------------->
-						<div class = "container-fluid space">
-						<div class = "tab container-fluid"  id = "projects">
-							<br>
-							<br>
-							<h2 class = "pjh2">PROJECTS</h2>
-							<div class = "pcont container">
-							<ul >
-								<li><div class = "ptile">
-										<div class  = "ppiccl"><div class = "ppicl p1"></div></div>
-										<div class = "ptextr">
-											<h3 class = "pjh3">PORTFOLIO WEBPAGE</h3><p>Designed, Developed and Deployed a portfolio website using HTML, CSS, JS, and BootStrap.</p>
-										</div>
-									</div>
-								</li>
-								<li><div class = "ptile">
-										
-										<div class = "ptextl">
-											<h3 class = "pjh3">CALCULATION OF ROI</h3><p>In this project, we integrate the customer data of an organisation 
-																		and create a customer 360 which is then used to calculate the Return on Investment 
-																		on Campaigns using Markov chain analysis. </p>
-										</div>
-										<div class  = "ppiccr"><div class = "ppicr p2"></div></div>
-									</div>
-								</li>
-								<li><div class = "ptile">
-										<div class  = "ppiccl"><div class = "ppicl p3"></div></div>
-										<div class = "ptextr">
-											<h3 class = "pjh3">AUTOMATED VISUAL MEDIA CAPTION GENERATOR</h3><p>In this project, we have built an application putting-together the capabilities of 
-													Computer Vision, Deep Learning, and NLP to intercept, understand and describe real world visual content.</p>
-										</div>
-										
-									</div>
-								</li>
-							</ul>
-							</div>
-						</div>
-						</div>
-<!-----------------contactpage---------------------------------------------------->
-						<div class = "container-fluid space">
-						<div class = "tab ctbody" id = "contact">
-							<div class = "container-fluid">
-							<br>
-							<h2 class = "ch2">CONTACT</h2>
-							<div class = "ccont container">
-							<p>Hi, I'm thrilled your here. <br>Let's get connected.</p>
-							<div class = "ctshape1 container">
-								<a class = "fa fa-instagram cta"  id = "insta"
-								href  = "https://www.instagram.com/sanjaykumardasari/" target = "_blank"></a>
-								
-								<a class = "fa fa-envelope cta" id = "mail" href = "mailto:dsanjaykumar121@gmail.com" 
-								target = "_blank"></a>
-								
-								<a class = "fa fa-whatsapp cta" id = "wapp"
-								href="https://api.whatsapp.com/send?phone=918500434390&text=Hi%20There!" 
-								target = "_blank"></a>
-								
-								<a class = "fa fa-linkedin cta" id = "lin"
-								href = "https://www.linkedin.com/in/sanjay-kumar-dasari-b920b7193/" target = "_blank"></a>
-								
-								<a class = "fa fa-telegram cta" id  = "tele"
-								 href = "https://t.me/sanjay2110" target = "_blank"></a>
-							</div>
-							
-							<h5 class = "ch3">Gmail : dsanjaykumar121@gmail.com</h5>
-							<h5 class = "ch3">phone : 9182711939</h5>
-							</div>
-							</div>
-						</div>
-							</div>
+						</div>		
+				
+<!---------------------------edu end-------------------------------------->
 <!-------------------------Resume------------------------->
-						<div class = "container-fluid space">
 						<div class = "tab container-fluid" id = "resume">
 							<br><br>
 							<h2 class = "rh2">RESUME</h2>
@@ -284,24 +218,14 @@
 								<a href = "resume.pdf" target = "_blank" download><div class = "rpdf"></div>click me</a>
 							
 							</div>
-							
 						</div>
-						</div>
-					</div>	
+				
+				
 				</div>
+<!-----------------------------tabs-end-------------------------->
 			</div>
 		</div>
+		
 	</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-<!----------------->
 

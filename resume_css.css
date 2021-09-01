@@ -32,7 +32,11 @@ h1{
 
 .content, .boundary {
 	padding : 0;
+	height : 100%;
+	margin : 0;
+	#border : 10px solid green;
 } 
+
 
 .dpcont {
 	width : min-content;
@@ -120,7 +124,7 @@ h1{
 	
 	h1{
 		padding : 0px;
-		bottom : 20px;
+		bottom  : 20px;
 	}
 	
 }
@@ -162,24 +166,32 @@ h1{
 	}
 	
 	.navbar{
+		position : sticky;
+		float : right;
+		top : 0px;
 		background-color : black;
-		height : 100%;
+		height : 100vh;
 		width : 0px;
 	}
-	
-	#open {
-		display : block;
+	.menu {
+		#border: 2px solid red;
 		position : absolute;
-		right : 30px;
-		top : 10	px;
+		right : 0;
+	}
+	#open {
+		background-color : black;
+		display : block;
+		width : min-content;
+		top : 0;
+		right : 0px;
+		position: sticky;
+		padding : 10px;
+		border-bottom-left-radius : 50%;
 		font-size : 3vw;
-		float : left;
 		font-weight :  900;
 		cursor : pointer;
-		z-index : 1;
 		transition : 0.5s;
 	}
-	
 	.nav{
 		display : none;
 	}
@@ -204,25 +216,27 @@ h1{
 	display : block;
 }
 
+
 #projects {
 	display : block;
+	background-color : red;
 }
 #resume {
 	display : block;
 }
 
-.row::after {
-  content: "";
-  clear: both;
-}
-
-
 .tabs {
-	display : inline-block;
 	width : 100%;
-	background-color : #EEEEEE;
+	background-color : #F9FBFC;
 }
 
+.tab {
+	
+}
+
+html {
+  #scroll-behavior: smooth;
+}
 
 .space {
 	padding: 0;
