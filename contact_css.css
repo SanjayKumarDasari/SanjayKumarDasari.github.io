@@ -1,4 +1,5 @@
-.ctbody{
+.ctbody{  
+	bottom : 0px;
 	font-size : 25px;
 	text-align : center;
 	background-color : #161616;
@@ -51,6 +52,4 @@
 .ccont {
 	#background-color : #F4F4F2;
 	margin : 20px auto;
----	border-bottom-left-radius : 50%;
-	---border-bottom-right-radius : 50%;
 }

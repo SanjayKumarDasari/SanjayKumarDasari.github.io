@@ -5,7 +5,7 @@ function openToggle(op){
 	var nav = document.getElementById("myNavbar");
 	var p = window.getComputedStyle(op);
 	var b = document.getElementById("main");
-	b.style.transition = "0.5s";
+	//b.style.transition = "0.5s";
 	if(p.getPropertyValue("right") === "0px")
 	{
 		navbar.style.width = "250px";
@@ -45,7 +45,7 @@ function rsetH() {
 	var menu_v = document.getElementById("menu");
 				//alert(content_h);
 				if(y.matches){
-				menu_v.style.height = "100";
+				menu_v.style.height = "100 ";
 				}
 }
 function setH(){
